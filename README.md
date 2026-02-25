@@ -1,21 +1,28 @@
-# Gandhinagar Weather Scraper 🌤️
+# Gandhinagar Weather & AQI Scraper 🌤️🌫️
 
-A Python program that scrapes the last 10 days of weather data (temperature and humidity) for Gandhinagar from the web, calculates the average and median values, and saves the results into a text file.
+A Python-based web scraping project that collects the **last 10 days of weather data** for Gandhinagar, including:
+
+- 🌡 Temperature (°C)  
+- 💧 Humidity (%)  
+- 🌫 AQI (Air Quality Index)  
+
+The program calculates **Average** and **Median** for each parameter and saves the analysis to a `results.txt` file.
 
 ---
 
 ## 📌 Features
 
-- Scrapes historical weather data from the web
-- Extracts:
-  - Temperature (°C)
-  - Humidity (%)
-- Calculates:
+- Scrapes historical **Temperature & Humidity**
+- Scrapes **AQI (Air Quality Index)**
+- Performs statistical analysis:
   - Average Temperature
   - Median Temperature
   - Average Humidity
   - Median Humidity
-- Saves results automatically into `results.txt`
+  - Average AQI
+  - Median AQI
+- Automatically generates `results.txt`
+- Clean and structured output
 
 ---
 
@@ -23,7 +30,7 @@ A Python program that scrapes the last 10 days of weather data (temperature and 
 
 - Python 3.x
 - Internet connection
-- Required Python libraries:
+- Required libraries:
 
 ```bash
 pip install requests beautifulsoup4
